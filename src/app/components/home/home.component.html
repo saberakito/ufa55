@@ -6,116 +6,17 @@
             <img src="{{ slide.img }}" alt="" width="100%">
             </div>
         </ngx-slick-carousel>
-</div>
-<div  class="content_">
-    <div  class="container content_area_set">
-            <div  class="login_area">
-                <form  action="https://www.memberbet.com/chkLogin" id="flogin" method="post" novalidate="" class="ng-untouched ng-pristine ng-valid">
-                    <input  class="form-control input-text" id="txtUsername" name="user" placeholder="Username" required="" type="text">
-                    <input  class="form-control input-text" id="txtPassword" name="pass" placeholder="Password" required="" type="password">
-                    <div  class="login_btn">เข้าสู่ระบบ</div>
-                </form>
-            </div>
-            <div _ngcontent-oex-c6="" class="titleContentBot"><div _ngcontent-oex-c6="" class="titleLeft">บทความ</div><div _ngcontent-oex-c6="" class="viewmore" routerlink="/news" tabindex="0" routerLink="/news"><img class="hover" style="width: 60px;" src="/assets/images/icon/all.png" alt=""></div></div>
-            
-            <div _ngcontent-oex-c6="" class="dataContentBot">
-                    <div _ngcontent-oex-c6="" class="row">
-                        <ng-container *ngFor="let todo of todoList; index as i; first as isFirst;let l = count">
-                            <div _ngcontent-oex-c6="" class="col-sm newsArea" tabindex="0" routerLink="/news/news-detail/{{todo.adjust_page_title}}-{{todo.adjust_page_id}}">
-                                <div _ngcontent-oex-c6="" class="image-news" [ngStyle]="{'background-image':'url('+todo.adjust_image+')'}">
-                                    &nbsp;
-                                    <!-- <img src="'/upload/files/{{todo.adjust_page_image_name}}.{{todo.adjust_page_image_type}}" alt=""> -->
-                                </div>
-                                <div _ngcontent-oex-c6="" class="text-news" style="color:white; height: 48px; overflow: hidden;"> {{todo.adjust_page_title}} </div>
-                                <div class="date_news"> {{todo.adjust_page_create_date}} </div>
-                            </div>
-                        </ng-container>
-                        <!-- <div _ngcontent-oex-c6="" class="col-sm newsArea" tabindex="0" ng-reflect-router-link="/news/news-detail,คนแรกของโลก!">
-                            <div _ngcontent-oex-c6="" class="image-news"  style="background-image: url('http://betufa55.com/upload/files/2019-05-30_13-34-541559219694.jpg');"></div>
-                            <div _ngcontent-oex-c6="" class="text-news" style="color:white; height: 60px; overflow: hidden;"> คนแรกของโลก!เปโดรซิวแชมป์ใหญ่ครบถ้วน </div>
-                            <div class="date_news"> 10 ธันวาคม 2563 </div>
-                        </div>
-                        <div _ngcontent-oex-c6="" class="col-sm newsArea" tabindex="0" ng-reflect-router-link="/news/news-detail,อินเตอร์เด้ง">
-                            <div _ngcontent-oex-c6="" class="image-news"  style="background-image: url('http://betufa55.com/upload/files/2019-05-30_13-34-541559219694.jpg');"></div>
-                            <div _ngcontent-oex-c6="" class="text-news" style="color:white; height: 60px; overflow: hidden;"> อินเตอร์เด้งสปัลเล็ตติ สั่นสะเทือนถึงแมนยู </div>
-                            <div class="date_news"> 10 ธันวาคม 2563 </div>
-                        </div>
-                        <div _ngcontent-oex-c6="" class="col-sm newsArea" tabindex="0" ng-reflect-router-link="/news/news-detail,เช็กชื่อดูมี">
-                            <div _ngcontent-oex-c6="" class="image-news"  style="background-image: url('http://betufa55.com/upload/files/2019-05-30_13-34-541559219694.jpg');"></div>
-                            <div _ngcontent-oex-c6="" class="text-news" style="color:white; height: 60px; overflow: hidden;"> เช็กชื่อดูมีใครบ้าง!โซลชาแจ้งบอร์ดโละ14แข้งภายใน2ปี </div>
-                            <div class="date_news"> 10 ธันวาคม 2563 </div>
-                        </div> -->
-                    </div>
-                </div>
+        <app-menu></app-menu>
 
-            <div _ngcontent-jev-c3="" class="row sport_button">
-                <div _ngcontent-jev-c3="" class="col col-6 col-sm-3 hvr-push no-padding top_banner aos-init aos-animate" data-aos="fade-right" data-aos-delay="200" data-aos-once="true" style="overflow: hidden; ">
-                    <div _ngcontent-jev-c3="" class="sport_img tt_l tt_col_c banner_hover Parent fadeInLeft animated"><img _ngcontent-jev-c3="" class="tt_img_df" src="assets/images/icon/sport.jpg"></div>
-                </div>
-                <div _ngcontent-jev-c3="" class="col col-6 col-sm-3 hvr-push no-padding top_banner aos-init aos-animate" data-aos="fade-right" data-aos-delay="300" data-aos-once="true" style="overflow: hidden; ">
-                    <div _ngcontent-jev-c3="" class="casino_img tt_l tt_col_c banner_hover Parent fadeInLeft animated"><img _ngcontent-jev-c3="" class="tt_img_df" src="assets/images/icon/casino.jpg"></div>
-                </div>
-                <div _ngcontent-jev-c3="" class="col col-6 col-sm-3 hvr-push no-padding top_banner aos-init aos-animate" data-aos="fade-right" data-aos-delay="200" data-aos-once="true" style="overflow: hidden; ">
-                    <div _ngcontent-jev-c3="" class="sport_img tt_l tt_col_c banner_hover Parent fadeInLeft animated"><img _ngcontent-jev-c3="" class="tt_img_df" src="assets/images/icon/lotto.jpg"></div>
-                </div>
-                <div _ngcontent-jev-c3="" class="col col-6 col-sm-3 hvr-push no-padding top_banner aos-init aos-animate" data-aos="fade-right" data-aos-delay="300" data-aos-once="true" style="overflow: hidden; ">
-                    <div _ngcontent-jev-c3="" class="casino_img tt_l tt_col_c banner_hover Parent fadeInLeft animated"><img _ngcontent-jev-c3="" class="tt_img_df" src="assets/images/icon/muaythai.jpg"></div>
-                </div>
-            </div>
-            <div _ngcontent-jev-c3="" class="row sport_button" style="margin-top:0px">
-                    <div _ngcontent-jev-c3="" class="col col-12 col-sm-6 hvr-push no-padding top_banner aos-init aos-animate" data-aos="fade-right" data-aos-delay="200" data-aos-once="true" style="overflow: hidden; ">
-                        <div _ngcontent-jev-c3="" class=" tt_l tt_col_c banner_hover Parent fadeInLeft animated">
-                            <img _ngcontent-jev-c3="" style="width: 100%;padding:5px;" class="tt_img_df" src="assets/images/icon/callcenter.jpg?v=1.1">
-                        </div>
-                    </div>
-                    <div _ngcontent-jev-c3="" class="col col-12 col-sm-6 hvr-push no-padding top_banner aos-init aos-animate" data-aos="fade-right" data-aos-delay="300" data-aos-once="true" style="overflow: hidden; ">
-                        <div _ngcontent-jev-c3="" class=" tt_l tt_col_c banner_hover Parent fadeInLeft animated">
-                            <img _ngcontent-jev-c3="" style="width: 100%;padding:5px;"  class="tt_img_df" src="assets/images/icon/banking.jpg">
-                        </div>
-                    </div>
-                </div>
-            <!-- <div _ngcontent-jev-c3="" class="step_register">
-                <div _ngcontent-jev-c3="" class="detailLeft"><img _ngcontent-jev-c3="" src="/assets/images/content/register.jpg"></div>
-                <div _ngcontent-jev-c3="" class="detailRight"><img _ngcontent-jev-c3="" class="hvr-push" routerLink="/page/deposit" src="/assets/images/icon/deposit.jpg" tabindex="0" ng-reflect-router-link="/page/deposit"><img _ngcontent-jev-c3="" class="hvr-push" routerLink="/page/withdraw" src="/assets/images/icon/withdraw.jpg" tabindex="0" ng-reflect-router-link="/page/withdraw">
-                    <a _ngcontent-jev-c3="" href="https://lin.ee/lpvoFA6" target="_bank"><img _ngcontent-jev-c3="" class="hvr-push" src="/assets/images/icon/tel.jpg"></a>
-                </div>
-            </div> -->
-            <!-- <div _ngcontent-jev-c3="" class="header_bar aos-init aos-animate" data-aos="fade-up" data-aos-delay="200" data-aos-once="true" style="float: left;    padding-bottom: 30px;"><img _ngcontent-jev-c3="" src="/assets/images/content/sportandcasino.jpg"></div>
-           
-            <div _ngcontent-jev-c3="" class="row sport_button">
-                <div _ngcontent-jev-c3="" class="col col-6 col-sm-3 hvr-push no-padding top_banner aos-init aos-animate" data-aos="fade-right" data-aos-delay="200" data-aos-once="true" style="overflow: hidden; ">
-                    <div _ngcontent-jev-c3="" class="sport_img tt_l tt_col_c banner_hover Parent fadeInLeft animated"><img _ngcontent-jev-c3="" class="tt_img_df" src="assets/images/icon/baccarat.png"></div>
-                </div>
-                <div _ngcontent-jev-c3="" class="col col-6 col-sm-3 hvr-push no-padding top_banner aos-init aos-animate" data-aos="fade-right" data-aos-delay="200" data-aos-once="true" style="overflow: hidden; ">
-                    <div _ngcontent-jev-c3="" class="sport_img tt_l tt_col_c banner_hover Parent fadeInLeft animated"><img _ngcontent-jev-c3="" class="tt_img_df" src="assets/images/icon/tiger-dragon.png"></div>
-                </div>
-                <div _ngcontent-jev-c3="" class="col col-6 col-sm-3 hvr-push no-padding top_banner aos-init aos-animate" data-aos="fade-right" data-aos-delay="300" data-aos-once="true" style="overflow: hidden; ">
-                    <div _ngcontent-jev-c3="" class="casino_img tt_l tt_col_c banner_hover Parent fadeInLeft animated"><img _ngcontent-jev-c3="" class="tt_img_df" src="assets/images/icon/bean.png"></div>
-                </div>
-                <div _ngcontent-jev-c3="" class="col col-6 col-sm-3 hvr-push no-padding top_banner aos-init aos-animate" data-aos="fade-right" data-aos-delay="200" data-aos-once="true" style="overflow: hidden; ">
-                    <div _ngcontent-jev-c3="" class="sport_img tt_l tt_col_c banner_hover Parent fadeInLeft animated"><img _ngcontent-jev-c3="" class="tt_img_df" src="assets/images/icon/sic-bo.png"></div>
-                </div>
-            </div>
+        <div _ngcontent-qxf-c3="" class="contentArea"><div _ngcontent-qxf-c3="" class="contentHeader"> UFA55.com แทงบอล UFABET </div><div _ngcontent-qxf-c3="" class="contentData"><div _ngcontent-qxf-c3="" class="contentText"><div _ngcontent-qxf-c3="" class="indent"><span _ngcontent-qxf-c3="" class="highlight"> BETUFA55.COM</span> แทงบอล <span _ngcontent-qxf-c3="" class="highlight">UFABET</span> ระบบดีที่สุด ฝาก-ถอน ระบบอัตโนมัติ เพียง 1 นาที ด้วยตัวคุณเองคุณจะไม่พลาดทุกการสนุก..การเดิมพัน หมดปัญหารอพนักงานช้า ลีลา มาลองระบบเรากันมาแทงบอลออนไลน์กับยูฟ่าเบทกัน </div><div _ngcontent-qxf-c3="" class="indent2"><span _ngcontent-qxf-c3="" class="highlight">UFABET</span> จัดหนัก จ่ายเต็ม ฝาก-ถอน 1 นาที</div><div _ngcontent-qxf-c3="" class="indent3"><span _ngcontent-qxf-c3="" class="highlight">UFABET</span> หนึ่งในเว็บพนันบอลออนไลน์น้องใหม่ที่มาแรงที่สุดในขณะนี้ ทั้งในเรื่องของการให้บิรการที่รวดเร็วทันสมัย และมีบอลให้นักพนันสามารถเลือกแทงจากทุกลีกทั่วโลก ที่นักพนันสามารถที่จะเข้าใช้บิรการตลอด 24 ชั่วโมง สำหรับวิธีในการสมัครเข้ามาใช้บริการกับทาง <span _ngcontent-qxf-c3="" class="highlight">UFABET</span> นักพนันสามารถที่จะสมัครผ่านทางช่องทางต่างๆที่ทางหน้าเว็บ เปิดให้บริการที่ปัจจุบันมีระบบอัตโนมัติท่าสามารถแทงบอล เงินสดผ่านเว็บพนันบอลได้เลย </div><div _ngcontent-qxf-c3="" class="indent"> ซึ่งทั้งหมดนี้ก็เพื่อที่จะตอบสนองความต้องการในเรื่องของการเข้าใช้บริการที่เพิ่มมากขึ้นอย่างต่อเนื่องโดยในการสมัครสมาชิกทางทีมงานจำเป็นที่จะต้องสอบถามในส่วนของข้อมูลส่วนตัวที่เป็นข้อมูลจริง เพื่อจะสมัครเข้าใช้บริการอย่างถูกต้อง ที่สำคัญเพื่อที่จะไม่ให้เกิดปัญหาเวลาที่ทำธุรกรรมทางการเงิน และหากเมื่อไรก็ตามที่ทางทีมงานตรวจสอบแล้วพบว่าข้อมูมที่ให้นั้นเป็นเท็จจะทำการยกเลิกการเข้าใช้บริการทั้งหมด สำหรับใครที่กำลังมองหาเว็บพนันออนไลน์ที่รับเว็บพนันบอลออนไลน์ที่จ่ายหนัก จ่าเต็มอยู่แล้วละก็ แนะนำว่าให้เข้ามาใช้บริการกับทาง <span _ngcontent-qxf-c3="" class="highlight">UFABET</span> รับรองว่าไม่ผิดหวังอย่างแน่นอน เพราะเมื่อเทียบกับการให้บริการในการแทงบอลออนไลน์กับเว็บอื่น เว็บของเราเป็นเว็บที่ให้ราคาดีที่สุด และแน่นอนว่าราคาต่อรองก่อนทำการการแข่งขันอย่างรวดเร็ว ทั้งนี้ก็เพื่อที่จะตอบสนองในเรื่องของเทคนิคบางอย่างที่จะต้องนำมาใช้ในการต่อรองและทำการวิเคราะห์เพื่อที่จะวางแผนในการวางเงินเดิมพัน ที่รับรองว่าถ้าวางแผนดีคุณจะได้เงินกลับไปอย่างแน่นอน นอจากนี้แล้วทาง </div><div _ngcontent-qxf-c3="" class="indent"> ยูฟ่าเบท ก็ยังมีการมอบสิทธิพิเศษและโปรโมชั่นต่างๆมากมายให้กับสมาชิกที่ได้เข้าร่วมใช้บริการที่รับรองว่าคุณเองไม่เคยที่จะสัมผัสที่ไหนมาก่อนอย่างแน่นอน แถมทางเราก็ยังมีช่องในการถ่ายทอดสดฟุตบอลให้นักพนันได้เข้ามาชม มาเชียร์บอลคู่ที่ตัวเองแทงอีกด้วย และสำหรับเซียนพนันหรือนักพนันบอลทั้งหลายที่ต้องการข้อมูลที่จะนำไปใช้ในการวิเคราะห์บอลทาง <span _ngcontent-qxf-c3="" class="highlight">UFABET</span> ก็ได้ทำการจัดสรรหาในส่วนของข้อมูลเชิงสถิติไม่ว่าจะเป็นสถิติผลแพ้ชนะ </div><div _ngcontent-qxf-c3="" class="indent"> สถิติทีมเหย้าทีมเยือน หรือแม้กระทั้งผลการแข่งทั้งในบ้านและนอกบ้าน ฯลฯ ที่ทาง <span _ngcontent-qxf-c3="" class="highlight">UFABET</span> ได้ทำการเตรียมเอาไว้ให้นักพนันทั้งหลายได้นำไปใช้ในการวิเคราะห์เป็นที่เรียบร้อยแล้ว เพื่อที่ไม่ให้คอบอลรวมไปถึงคาสิโนออนไลน์ทั้งหลาย หรือนักพนันทั้งหลายไม่ต้องกังวลในการหาข้อมูลมาใช้ในการวิเคราะห์จากหลายๆที่ เพราะเข้ามาที่นี้ที่เดียวคุณจะได้รับในสิ่งที่คุณต้องการกลับไปอย่างแน่นอน ดังนั้นบอกได้เบยว่ามาที่นี้ที่เดียวได้ครบทุกอย่างแน่นอน </div></div></div></div>
 
-            <div _ngcontent-jev-c3="" class="row sport_button">
-                <div _ngcontent-jev-c3="" class="col col-6 col-sm-3 hvr-push no-padding top_banner aos-init aos-animate" data-aos="fade-right" data-aos-delay="200" data-aos-once="true" style="overflow: hidden; ">
-                    <div _ngcontent-jev-c3="" class="sport_img tt_l tt_col_c banner_hover Parent fadeInLeft animated"><img _ngcontent-jev-c3="" class="tt_img_df" src="assets/images/icon/roulette.png"></div>
-                </div>
-                <div _ngcontent-jev-c3="" class="col col-6 col-sm-3 hvr-push no-padding top_banner aos-init aos-animate" data-aos="fade-right" data-aos-delay="300" data-aos-once="true" style="overflow: hidden; ">
-                    <div _ngcontent-jev-c3="" class="casino_img tt_l tt_col_c banner_hover Parent fadeInLeft animated"><img _ngcontent-jev-c3="" class="tt_img_df" src="assets/images/icon/slot.png"></div>
-                </div>
-                <div _ngcontent-jev-c3="" class="col col-6 col-sm-3 hvr-push no-padding top_banner aos-init aos-animate" data-aos="fade-right" data-aos-delay="200" data-aos-once="true" style="overflow: hidden; ">
-                    <div _ngcontent-jev-c3="" class="sport_img tt_l tt_col_c banner_hover Parent fadeInLeft animated"><img _ngcontent-jev-c3="" class="tt_img_df" src="assets/images/icon/football.png"></div>
-                </div>
-                <div _ngcontent-jev-c3="" class="col col-6 col-sm-3 hvr-push no-padding top_banner aos-init aos-animate" data-aos="fade-right" data-aos-delay="300" data-aos-once="true" style="overflow: hidden; ">
-                    <div _ngcontent-jev-c3="" class="casino_img tt_l tt_col_c banner_hover Parent fadeInLeft animated"><img _ngcontent-jev-c3="" class="tt_img_df" src="assets/images/icon/muaythai.png"></div>
-                </div>
-            </div>
 
-            <div _ngcontent-jev-c3="" class="header_bar aos-init aos-animate" data-aos="fade-up" data-aos-delay="200" data-aos-once="true" style="float: left;"><img _ngcontent-jev-c3="" src="/assets/images/content/playphone.png"></div>
+        <div _ngcontent-qxf-c3="" class="adsAreaDiv"><div _ngcontent-qxf-c3="" class="adsTop"><img _ngcontent-qxf-c3="" alt="Nature" class="responsive" src="/assets/images/ads_image/6.jpg"></div><div _ngcontent-qxf-c3="" class="adsBottom"><img _ngcontent-qxf-c3="" alt="Nature" class="responsive" src="/assets/images/ads_image/7.jpg"></div></div>
 
-            <div _ngcontent-jev-c3="" class="header_bar aos-init aos-animate" data-aos="fade-up" data-aos-delay="200" data-aos-once="true" style="float: left;"><img _ngcontent-jev-c3="" src="/assets/images/content/banking.jpg"></div> -->
-    </div>
+        <app-content-bottom></app-content-bottom>
 </div>
 
-<div _ngcontent-gyx-c3="" attr="http://line.me/ti/p/~@vwin168" class="qr-popup"><i _ngcontent-gyx-c3="" aria-hidden="true" class="fa fa-window-close fa-6 close-qr"></i></div>
+
+<div class="qr-popup" style="display: block;">
+    <i class="fa fa-window-close fa-6 close-qr" aria-hidden="true" style="display: block;"></i>
+</div>

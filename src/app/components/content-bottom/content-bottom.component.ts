@@ -12,7 +12,6 @@ export class ContentBottomComponent implements OnInit {
   ngOnInit() {
     //call service
     this.todoServcie.getTodoList(2).subscribe((response)=>{
-      
       this.todoList = response;
     });
   }
@@ -20,9 +19,11 @@ export class ContentBottomComponent implements OnInit {
 }
 
 interface Todo{
-  content_id:number;
-  content_title:string;
-  content_description:string;
-  content_short_description:string;
-  content_image_url:string;
+  adjust_page_id:number;
+  adjust_page_type:string;
+  adjust_page_title:string;
+  adjust_page_description:string;
+  adjust_page_short_description:string;
+  adjust_page_image_name:string;
+  adjust_page_image_type:string;
 }
